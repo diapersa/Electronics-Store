@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.a4diapersa.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+
+    </padding>
+
+    <Label text="*** PRODUCTS ***"/>
+    <ListView fx:id="listProducts" />
+
+    <HBox>
+        <VBox>
+            <Label text="Product category"/>
+            <TextField fx:id="textProductCategory"/>
+        </VBox>
+
+        <VBox>
+            <Label text="Product name"/>
+            <TextField fx:id="textProductName"/>
+        </VBox>
+
+        <VBox>
+            <Label text="Product price"/>
+            <TextField fx:id="textProductPrice"/>
+        </VBox>
+
+        <HBox fx:id="hboxButtonsProduct">
+            <Button fx:id="btnAddProduct" text="Add product" onAction="#onAddProductButtonClick"/>
+            <Button fx:id="btnDeleteProduct" text="Delete product" onAction="#onDeleteProductBtnClick"/>
+            <Button fx:id="btnUpdateProduct" text="Update product" onAction="#onUpdateProductBtnClick"/>
+        </HBox>
+
+
+    </HBox>
+
+    <Label text="*** ORDERS ***"/>
+    <Label text="Choose an order to add or delete a product from it"/>
+
+    <ListView fx:id="listOrders"/>
+
+
+
+    <HBox>
+        <VBox>
+            <Label text="Write id of the product you want to add to the order"/>
+
+            <HBox>
+                <VBox>
+                    <Label text="Product id"/>
+                    <TextField fx:id="textIdProductForOrder"/>
+                </VBox>
+
+                <VBox>
+                    <Label text="Delivery Date"/>
+                    <TextField fx:id="textDeliveryDateOrder"/>
+                </VBox>
+            </HBox>
+
+            <VBox>
+                <Label text="Press add product to add a product to a new order"/>
+                <Button fx:id="btnAddProductToOrder" text="Add product" onAction="#onAddProductToOrderBtnClick"/>
+
+                <Label text="Press delete product to delete a product from an existing order"/>
+                <Button fx:id="btnDeleteProductFromOrder" text="Delete product" onAction="#onDeleteProductFromOrderBtnClick"/>
+
+                <Button fx:id="btnAddOrder" text="Add order" onAction="#onAddOrderButtonClick"/>
+                <Button fx:id="btnDeleteOrder" text="Delete order" onAction="#onDeleteOrderBtnClick"/>
+            </VBox>
+
+
+        </VBox>
+    </HBox>
+
+
+
+    <ListView fx:id="listOrderProducts"/>
+
+    <HBox fx:id="hboxButtonsOrder">
+        <Label text="Press it and the new product will be added to the existing order"/>
+       <Button fx:id="btnAddProductToExistingOrder" text="Add product to existing order" onAction="#onAddProductToExistingOrderBtnClick"/>
+    </HBox>
+
+    <Label text="*** REPORTS ***"/>
+    <HBox fx:id="hboxBtnReports">
+        <Button fx:id="btnNrOfProductsPerCategory" text="Number of products per category" onAction="#nrOfProductsPerCategory"/>
+        <Button fx:id="btnMonthlyProfit" text="Most profitable months of the year" onAction="#onPrintMonthlyProfit"/>
+        <Button fx:id="btnProductRevenue" text="Products by revenue" onAction="#onPrintProductsByRevenue"/>
+    </HBox>
+
+    <ListView fx:id="listReports"/>
+
+
+
+
+
+
+
+</VBox>
