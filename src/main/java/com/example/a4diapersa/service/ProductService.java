@@ -3,7 +3,6 @@ package com.example.a4diapersa.service;
 import com.example.a4diapersa.domain.Product;
 import com.example.a4diapersa.exceptions.ValidationException;
 import com.example.a4diapersa.repository.IRepository;
-import com.example.a4diapersa.repository.MemoryRepository;
 
 import java.util.List;
 

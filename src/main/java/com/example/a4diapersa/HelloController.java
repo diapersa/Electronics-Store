@@ -3,18 +3,14 @@ package com.example.a4diapersa;
 import com.example.a4diapersa.domain.Order;
 import com.example.a4diapersa.domain.Product;
 import com.example.a4diapersa.exceptions.RepositoryException;
-import com.example.a4diapersa.repository.IRepository;
 import com.example.a4diapersa.service.OrderService;
 import com.example.a4diapersa.service.ProductService;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 
-import java.security.AllPermission;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;

@@ -1,14 +1,5 @@
 package com.example.a4diapersa;
 
-import com.example.a4diapersa.domain.Order;
-import com.example.a4diapersa.domain.OrderGenerator;
-import com.example.a4diapersa.domain.Product;
-import com.example.a4diapersa.domain.ProductGenerator;
-import com.example.a4diapersa.exceptions.RepositoryException;
-import com.example.a4diapersa.repository.IRepository;
-import com.example.a4diapersa.repository.MemoryRepository;
-import com.example.a4diapersa.repository.SQLOrderRepository;
-import com.example.a4diapersa.repository.SQLProductRepository;
 import com.example.a4diapersa.service.OrderService;
 import com.example.a4diapersa.service.ProductService;
 import javafx.application.Application;
@@ -17,9 +8,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class HelloApplication extends Application {
     private static ProductService productService;

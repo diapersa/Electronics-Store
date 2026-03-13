@@ -4,12 +4,10 @@ import com.example.a4diapersa.domain.Order;
 import com.example.a4diapersa.domain.Product;
 import com.example.a4diapersa.exceptions.ObjectNotFoundException;
 import com.example.a4diapersa.exceptions.RepositoryException;
-import javafx.scene.control.Alert;
 import org.sqlite.SQLiteDataSource;
 
 import java.sql.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class SQLOrderRepository extends MemoryRepository<Order> implements AutoCloseable {

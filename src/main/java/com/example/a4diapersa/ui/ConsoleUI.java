@@ -1,12 +1,9 @@
 package com.example.a4diapersa.ui;
 
-import com.example.a4diapersa.domain.MonthlyProfit;
 import com.example.a4diapersa.domain.Order;
 import com.example.a4diapersa.domain.Product;
 import com.example.a4diapersa.service.OrderService;
 import com.example.a4diapersa.service.ProductService;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
